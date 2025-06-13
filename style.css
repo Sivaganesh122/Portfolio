@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.theme-toggle{
+    text-align: right;
+    size: 1rem;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+
+
+body.dark-mode {
+  background-color: #0f172a; /* dark navy blue */
+  color: #f1f5f9; /* soft light text */
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e293b; /* deep gray-blue */
+}
+
+body.dark-mode section {
+  background-color: #1e293b;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #38bdf8; /* light blue accent */
+}
+
+body.dark-mode nav ul li a {
+  color: #f1f5f9;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #38bdf8; /* hover accent color */
+}
+
+body.dark-mode h2 {
+  color: #38bdf8;
+}
+
+body.dark-mode a {
+  color: #7dd3fc; /* brighter link color */
+}
+
+
+/* Responsive Styles */
+
+/* Tablets & smaller laptops */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .theme-toggle {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #toggle-theme {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  nav ul {
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  #toggle-theme {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  section p,
+  section ul {
+    font-size: 0.95rem;
+  }
+}
